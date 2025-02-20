@@ -1,0 +1,188 @@
+/* Contenedor general */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-top: 30px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Formulario */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Input de mesa */
+.p-inputtext {
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  padding: 10px;
+  border: 2px solid #3498db;
+  transition: border-color 0.3s ease;
+}
+
+.p-inputtext:focus {
+  border-color: #2980b9;
+}
+
+/* Botones */
+.p-button-outlined {
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.p-button-outlined.p-m-2 {
+  padding: 12px;
+  background-color: #3498db;
+  border-color: #2980b9;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.p-button-outlined.p-m-2:hover {
+  background-color: #2980b9;
+}
+
+.p-button-success {
+  font-size: 1.2rem;
+  background-color: #2ecc71;
+  border-color: #27ae60;
+  padding: 10px 20px;
+  color: white;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.p-button-success:hover {
+  background-color: #27ae60;
+}
+
+/* Productos disponibles */
+.productos-disponibles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.producto-boton {
+  padding: 15px 25px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  border: 1px solid #bdc3c7;
+  color: #34495e;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.producto-boton:hover {
+  background-color: #bdc3c7;
+  color: white;
+}
+
+/* Listado de productos seleccionados */
+.selected-items-list {
+  width: 80%;
+  max-width: 400px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.selected-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ecf0f1;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.selected-item span {
+  font-size: 1.1rem;
+  color: #34495e;
+}
+
+.remove-item-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-item-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Tabla de pedidos */
+.p-datatable {
+  margin-top: 30px;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.p-datatable .p-column {
+  font-size: 1.1rem;
+  color: #34495e;
+}
+
+.p-datatable .p-column-header {
+  background-color: #3498db;
+  color: white;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  font-weight: bold;
+}
+
+/* Estilo de las columnas */
+.p-datatable .p-column-header, .p-datatable .p-column-body {
+  text-align: center;
+}
+
+/* Agregar bordes a la tabla */
+.p-datatable td, .p-datatable th {
+  border: 1px solid #ecf0f1;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  background-color: #fff;
+}
