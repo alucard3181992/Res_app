@@ -87,7 +87,8 @@ import io from "socket.io-client";
 import VistaPrincipalVenta from "@/Components/Venta/Venta";
 import { useRouter } from "next/router";
 
-const socket = io({ path: "/api/socket" });
+const socket = io(process.env.NEXT_PUBLIC_SOCKET_URL || "", { path: "/api/socket" });
+//const socket = io({ path: "/api/socket" });
 
 export default function Caja() {
   const [mesa, setMesa] = useState("");
